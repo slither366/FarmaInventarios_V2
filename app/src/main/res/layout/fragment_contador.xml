@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingRight="0dp"
+        android:paddingLeft="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="45dp">
+
+            <EditText
+                android:id="@+id/et_codScaneado"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:textColorHint="@color/colorSuave"
+                android:backgroundTint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:hint="@string/hint_codproducto"
+                android:inputType="number"
+                />
+
+            <Button
+                android:id="@+id/buttonScan"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_check_24dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="Codigo:"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_codigo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="      "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="Laboratorio:"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_laboratorio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="      "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre:"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text=" "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_weight="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Anaquel:"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_weight="7">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:android="http://schemas.android.com/apk/res/android">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_anaquel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="26dp"
+                            android:elevation="5dp"
+                            app:borderWidth="0dp"
+                            app:fabSize="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_changeAnaquel"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="-45dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@+id/fab_anaquel"
+                            android:background="@drawable/floating_action_button_label"
+                            android:paddingBottom="2dp"
+                            android:paddingTop="5dp"
+                            android:elevation="7dp"
+                            android:text=""
+                            android:textColor="#800"
+                            android:textSize="20dp"
+                            android:textAlignment="center"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CANTIDAD PREVIAMENTE CONTADA"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:text="Enteros:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tv_entero_antes"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorWhite"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fracciones:"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tv_fraccion_antes"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="14dp"
+                        android:textColor="@color/colorWhite"
+                        android:textAlignment="center"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="10dp"
+        android:paddingRight="18dp"
+        android:paddingLeft="18dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Enteros: "
+                android:textSize="16dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/tv_desEntero"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" 0"
+                android:textSize="16dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_entero_menos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:src="@drawable/minus_48"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_entero"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="@string/hint_cantidad"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/coloNumero"
+                    android:enabled="false"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textSize="50dp" />
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_entero_mas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/colorAccent"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_add_black_70dp" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Fracciones: "
+                android:textSize="16dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="textEnd"
+                android:layout_weight="6"
+                />
+
+            <TextView
+                android:id="@+id/tv_desFraccion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" 0"
+                android:textSize="16dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:layout_weight="4"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_fraccion_menos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:src="@drawable/minus_48"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_fraccion"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="@string/hint_cero"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/coloNumero"
+                    android:enabled="false"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:textSize="50dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_fraccion_mas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/colorAccent"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_add_black_70dp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <Spinner
+                android:id="@+id/spinnerScannerDevices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/boton_cancelar"/>
+        <Button
+            android:id="@+id/btn_guardar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/boton_guardar"/>
+
+    </LinearLayout>
+
+</LinearLayout>

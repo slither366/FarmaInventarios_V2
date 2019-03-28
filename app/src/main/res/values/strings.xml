@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PdApp v1.0</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_codproducto">Escanear Producto</string>
+    <string name="boton_cancelar">Cancelar</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="hint_cantidad">0</string>
+    <string name="hint_cero">0</string>
+</resources>

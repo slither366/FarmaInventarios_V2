@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="colorBoton">#FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSuave">#bdbdbd</color>
+    <color name="colorBlack">#000000</color>
+    <color name="coloNumero">#303F9F</color>
+    <color name="colorYellow">#FFEB3B</color>
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorBordeGreen">#C8E6C9</color>
+    <color name="colorBlue">#3F51B5</color>
+    <color name="colorBorderBlue">#448AFF</color>
+    <color name="colorAmber">#FFC107</color>
+</resources>

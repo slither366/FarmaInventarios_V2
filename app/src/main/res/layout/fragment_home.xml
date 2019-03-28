@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textSize="20dp"
+                android:paddingTop="25dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Bienvenido:"/>
+            <TextView
+                android:id="@+id/tv_nombreInventariador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center|right"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="DAVID FLORES LUJAN"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cuadrado_configurado"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:textSize="18dp"
+                    android:paddingTop="25dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="Estado del PDA:"/>
+                <TextView
+                    android:id="@+id/tv_stadoPda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center|right"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="CONFIGURADO"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="60dp"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cuadrado_normal"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:textSize="18dp"
+                    android:paddingTop="25dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Productos Inventariados:"/>
+                <TextView
+                    android:id="@+id/tv_cantTotInventariado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center|right"
+                    android:textSize="35dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
